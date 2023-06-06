@@ -2,7 +2,7 @@
     "name": "ottoriot",
     "description": "A custom, kick ass theme for ottoriot fantasy football greatness.",
     "demo": "https://ottoriot.com",
-    "version": "2023.1",
+    "version": "2023.1.0",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -32,7 +32,7 @@
     "keywords": [
         "ottoriot",
         "fantasy football",
-        "kick ass theme"
+        "ghost-theme"
     ],
     "repository": {
         "type": "git",
