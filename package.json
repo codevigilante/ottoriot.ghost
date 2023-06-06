@@ -1,8 +1,8 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A starter theme for Ghost theme development",
-    "demo": "https://starter.ghost.io",
-    "version": "2.0.1",
+    "name": "ottoriot",
+    "description": "A custom, kick ass theme for ottoriot fantasy football greatness.",
+    "demo": "https://ottoriot.com",
+    "version": "2023.1",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -18,28 +18,28 @@
         "pretest": "npm run build"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Otto",
+        "email": "otto@ottoriot.com",
+        "url": "https://ottoriot.com"
     },
     "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "WebApp"
         ]
     },
     "keywords": [
-        "ghost",
-        "theme",
-        "ghost-theme"
+        "ottoriot",
+        "fantasy football",
+        "kick ass theme"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/codevigilante/ottoriot.ghost"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
+    "bugs": "https://github.com/codevigilante/ottoriot.ghost/issues",
+    "contributors": "",
     "devDependencies": {
         "@babel/core": "^7.21.0",
         "@babel/preset-env": "^7.20.2",
