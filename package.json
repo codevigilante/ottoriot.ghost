@@ -50,7 +50,7 @@
         "bestzip": "^2.2.1",
         "postcss-import": "^15.1.0",
         "postcss-preset-env": "^8.0.1",
-        "rollup": "^3.18.0",
+        "rollup": "^3.23.1",
         "rollup-plugin-livereload": "^2.0.5",
         "rollup-plugin-postcss": "^4.0.2"
     },
@@ -78,6 +78,27 @@
             },
             "xl": {
                 "width": 2000
+            }
+        },
+        "custom":
+        {
+            "hero_headline":
+            {
+                "type": "text",
+                "default": "Simple, Pro-Grade Fantasy Football Analysis",
+                "group": "homepage"
+            },
+            "hero_sub_headline":
+            {
+                "type": "text",
+                "default": "quickly set your lineups with confidence",
+                "group": "homepage"
+            },
+            "cta_text":
+            {
+                "type": "text",
+                "default": "Start Analyzing",
+                "group": "homepage"
             }
         }
     },
