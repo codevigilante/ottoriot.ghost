@@ -17,19 +17,21 @@
 </head>
 <body class="{{body_class}}">
     <div class="viewport">
-        <header class="container">
-            <nav class="nav-bar" id="main-nav-bar">
-                <a class="gh-head-logo" href="{{@site.url}}">
-                    {{#if @site.logo}}
-                        <img src="{{@site.logo}}" alt="{{@site.title}}" />
-                    {{else}}
-                        {{@site.title}}
-                    {{/if}}
-                </a>
-                {{navigation}}
-                <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
-            </nav>
-        </header>
+        <div class="nav-menu-top">
+            <header class="container">
+                <nav class="nav-bar" id="main-nav-bar">
+                    <a class="gh-head-logo" href="{{@site.url}}">
+                        {{#if @site.logo}}
+                            <img src="{{@site.logo}}" alt="{{@site.title}}" />
+                        {{else}}
+                            {{@site.title}}
+                        {{/if}}
+                    </a>
+                    {{navigation}}
+                    <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
+                </nav>
+            </header>
+        </div>
     
 
     <main class="body-main">

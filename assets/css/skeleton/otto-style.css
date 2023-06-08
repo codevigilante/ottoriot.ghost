@@ -3,11 +3,48 @@
 * {
     font-family: 'IBM Plex Mono', monospace;
     color:#01161E;
+    font-size: large;
 }
 
-header
+header,
+.page-header
 {
     margin-top:1.5rem;
+}
+
+.nav-menu-top
+{
+  border-top:1px solid #6C9263;
+  border-bottom: 1px solid #6C9263;
+}
+
+h1,h2,h3,h4,h5
+{
+  font-weight: bolder;
+}
+
+img
+{
+  border: 1px solid #01161E;
+  border-radius: 3px;
+  padding: 5px;
+  max-width: 100%;
+  height:auto;
+}
+
+.page-feature-image
+{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+figcaption,
+figcaption a,
+figcaption a:hover
+{
+  font-size: smaller;
+  color:#afafaf;
 }
 
 .primary-text
@@ -41,6 +78,7 @@ a:hover
 {
     text-decoration: underline;
     text-decoration-style: solid;
+    color:#924b04;
 }
 
 a.button
@@ -59,10 +97,14 @@ footer.contrast
 section.contrast p,
 div.contrast p *,
 footer.contrast p *,
-footer.contrast a,
-footer.contrast a:hover
+footer.contrast a
 {
     color:white;
+}
+
+footer.contrast a:hover
+{
+  color: #ffddbc;
 }
 
 .vert a
@@ -136,7 +178,7 @@ section.explanatory .row
   
   /*Background color change during hover state*/
   .nav-bar a:hover{
-    background-color: white;
+    text-decoration: solid;
   }
   
   /*Hides the menu Icon which will show when the nav needs to be responsive*/
@@ -179,6 +221,15 @@ section.explanatory .row
     .hero
     {
         margin-top: 10rem; 
+    }
+    .page-header
+    {
+      margin-top: 8rem;
+    }
+    .container.post
+    {
+      padding-right: 7%;
+      padding-left: 7%;
     }
     .value-props 
     {
