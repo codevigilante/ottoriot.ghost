@@ -16,31 +16,43 @@
 
 </head>
 <body class="{{body_class}}">
-    <div class="viewport">
-        <div class="nav-menu-top">
-            <header class="container">
-                <nav class="nav-bar" id="main-nav-bar">
-                    <a class="gh-head-logo" href="{{@site.url}}">
+    <div class="nav-menu-top">
+        <header class="container">
+            <nav class="nav-bar" id="main-nav-bar">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="{{@site.url}}" class="brand">
                         {{#if @site.logo}}
                             <img src="{{@site.logo}}" alt="{{@site.title}}" />
                         {{else}}
                             {{@site.title}}
                         {{/if}}
                     </a>
-                    {{navigation}}
-                    <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
-                </nav>
-            </header>
-        </div>
-    
+                </div>
 
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">  
+                        {{navigation}}
+                        <li class="cta"><a href="#">{{@custom.cta_text}}</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
     <main class="body-main">
         {{{body}}}
         {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
     </main>
 
-    <footer class="foot contrast">
-        <hr />
+    <footer class="foot bg-prime">
         <div class="container">
             <div class="row">
                 <div class="four columns">
@@ -63,7 +75,6 @@
             </div>
         </div>
     </footer>
-</div>
 
 {{!-- <foot> --}}
 {{ghost_foot}}

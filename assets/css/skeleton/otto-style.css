@@ -1,250 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-    font-family: 'IBM Plex Mono', monospace;
-    color:#01161E;
+/* UTILITIES */
+
+  body
+  {
+    font-family: 'Space Mono', monospace;
     font-size: large;
-}
+  }
 
-header,
-.page-header
-{
-    margin-top:1.5rem;
-}
-
-.nav-menu-top
-{
-  border-top:1px solid #6C9263;
-  border-bottom: 1px solid #6C9263;
-}
-
-h1,h2,h3,h4,h5
-{
-  font-weight: bolder;
-}
-
-img
-{
-  border: 1px solid #01161E;
-  border-radius: 3px;
-  padding: 5px;
-  max-width: 100%;
-  height:auto;
-}
-
-.page-feature-image
-{
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-}
-
-figcaption,
-figcaption a,
-figcaption a:hover
-{
-  font-size: smaller;
-  color:#afafaf;
-}
-
-.primary-text
-{
-    color:#F57A00;
-}
-
-.primary-bg
-{
-    background-color: #F57A00;
-}
-
-.secondary-text
-{
-    color: #6C9263;
-}
-
-.secondary-bg
-{
-    background-color: #6C9263;
-}
-
-a, a:visited
-{
-    color: #01161E;
-    text-decoration: underline;
-    text-decoration-style: dashed;
-}
-
-a:hover
-{
-    text-decoration: underline;
-    text-decoration-style: solid;
-    color:#924b04;
-}
-
-a.button
-{
-    text-decoration: none;
-}
-
-section.contrast,
-div.contrast,
-footer.contrast
-{
-    background-color: #01161E;
-    padding-bottom:1em;
-}
-
-section.contrast p,
-div.contrast p *,
-footer.contrast p *,
-footer.contrast a
-{
-    color:white;
-}
-
-footer.contrast a:hover
-{
-  color: #ffddbc;
-}
-
-.vert a
-{
-    display: block;
-    margin-bottom:1.5em;
-}
-
-.hero,
-.the-plan
-{
-    margin-top: 6rem;
-    text-align: center; 
-}
-
-.value-prop h4,
-.the-plan h4
-{
-    text-align:center;
-}
-
-.narrow
-{
-    margin-right:5%;
-    margin-left: 5%;
-}
-
-section
-{
-    margin-bottom: 5em;
-}
-
-section.explanatory .row
-{
-    margin-bottom:3em;
-}
-
-.lighter
-{
-    color: #999;
-}
-
-.brick
-{
-    text-align: center;
-    padding: 2em;
-}
-
-.brick h6
-{
+  h1,h2,h3,h4,h5,
+  .title
+  {
+    font-family: 'Mulish', sans-serif;
     font-weight: bold;
-}
+  }
 
-.brick p
-{
-    color:gray;
-}
+  section
+  {
+    margin-bottom:3em;
+    padding-top:3em;
+    padding-bottom: 3em;
+  }
 
-/* main nav-bar styling */
-.nav-bar{
-    background-color: #fff; 
+  footer
+  {
+    padding-top:3em;
+    padding-bottom:1.5em;
+    font-size: small;
+  }
+
+ .lead
+ {
+  color:rgb(121, 121, 121);
+ }
+
+ .center
+ {
+  text-align:center;
+ }
+
+ .push-btm-sm
+ {
+  margin-bottom:1.5em;
+ }
+
+ .push-btm-md
+ {
+  margin-bottom:2.5em;
+ }
+
+ .box-alt
+ {
+  border-top:2px solid #f41101;
+  border-bottom: 2px solid #f41101;
+ }
+
+ .narrow
+ {
+  margin-right:25%;
+  margin-left:25%;
+ }
+
+.cta a
+ {
+  font-weight: bold;
+  text-transform: capitalize;
+ }
+
+ .cta a:hover,
+ .cta a:focus
+ {
+  border-bottom:3px solid #f41101;
+  color:#f41101;
+  transition: 0.25s;
+ }
+
+ .menu .cta a:hover,
+ .menu .cta a:focus
+ {
+  border-top:none;
+ }
+  
+  .nav-bar li {
+    list-style: none;
+  }
+
+  ul.nav-links,
+  ul.nav-links li
+  {
+    margin-bottom: 0;
+  }
+
+  .nav-menu-top
+  {
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom:4em;
+  }
+
+  .bg-prime
+  {
+    background-color: black;
+    color:white;
+  }
+
+  .bg-prime a
+  {
+    color:white;
+  }
+
+  .bg-prime a:hover
+  {
+    color:white;
+  }
+
+  /* IMAGES */
+
+  .icon-48
+  {
+    width:48px;
+    height:48px;
+    display:inline;
+  }
+
+  /* COMPONENTS */
+  .brick
+  {
+    padding:1em;
+    border-bottom:1px solid #050505;
+  }
+
+  .hero
+  {
+    padding:5em 1em;
+  }
+
+
+  /* NAVBAR STYLING STARTS */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-bar a { text-decoration: none; }
+  .nav-bar a:hover {border-top:3px solid #FFD166;}
+  
+  /* LOGO */
+  .logo {
+    font-size:larger;
   }
   
-  /*Floats each item to the left with padding of 14 & 16 px.
-  Removes the underline with text decoration = none.*/
-  .nav-bar a{
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
   }
   
-  /*Background color change during hover state*/
-  .nav-bar a:hover{
-    text-decoration: solid;
+  .menu li {
+    margin-left:1.8em;
   }
-  
-  /*Hides the menu Icon which will show when the nav needs to be responsive*/
-  .nav-bar .icon{
+
+  /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
     display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size:larger;
+    user-select: none;
+    margin-bottom: 0;
   }
   
-  /*Set your custom screen width here replacing 700*/
-  @media (max-width: 700px){
-  /*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
-    .nav-bar a:not(:first-child){
-      display: none;
-    }
-  /*Brings the menu icon into view and floats it to the right*/
-    .nav-bar a.icon{
-      display: block; float: right;
-    }
-    
-  /*The nav-bar class will be changed to 'nav-bar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
-    .nav-bar.responsive {
-      position: relative;
-    }
-    .nav-bar.responsive a.icon {
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+   .menu {
+      display:none;
       position: absolute;
+      background-color:#ffd166;
+      border:3px solid #f0f0f0;
       right: 0;
-      top: 0;
+      left: 0;
+      text-align: center;
+      padding: 0.5em 0;
     }
-    
-  /*Removes the originally set float and brings them to view*/
-    .nav-bar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
 
-  /* Larger than phone */
-@media (min-width: 701px) 
-{
+    .menu li {
+        margin-left:0;
+      }
+  
+    .menu li:hover {
+      display: inline-block;
+    }
+  
+    .menu li + li {
+      margin-top: 0.5em;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .dropdown {
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
+    }
+
     .hero
     {
-        margin-top: 10rem; 
+      padding:0;
     }
-    .page-header
-    {
-      margin-top: 8rem;
-    }
-    .container.post
-    {
-      padding-right: 7%;
-      padding-left: 7%;
-    }
-    .value-props 
-    {
-        margin-top: 9rem;
-        margin-bottom: 7rem; 
-    }
-    .value-img 
-    {
-        margin-bottom: 1rem; 
-    }
-    
+
     .narrow
     {
-        margin-right:25%;
-        margin-left:25%;
+      margin-right:0;
+      margin-left: 0;
     }
   }
-  
+
+  @media (min-width: 769px)
+  {
+  }

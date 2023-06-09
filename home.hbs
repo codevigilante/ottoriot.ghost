@@ -1,12 +1,12 @@
 {{!< default}}
-<div class="container">
-    <section class="hero">
+<section class="hero">
+    <div class="container">
         <h1 class="title">{{@custom.hero_headline}}</h1>
-        <h5 class="lighter lead">{{@custom.hero_sub_headline}}</h5>
-        <a class="button button-primary" href="projections.html">{{@custom.cta_text}}</a>
-    </section>
+        <h3 class="lead">{{@custom.hero_sub_headline}}</h3>
+        <a class="button button-primary lg" href="/subscribe">{{@custom.cta_text}}</a>
+    </div>
+</section>
 
-    {{#page}}
-        {{content}}
-    {{/page}}
-</div>
+{{#page}}
+    {{content}}
+{{/page}}

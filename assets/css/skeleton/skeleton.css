@@ -29,7 +29,7 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #070707;}
 a:hover {
-  color: #0FA0CE; }
+  color: #000000; text-decoration: none;}
 
 
 /* Buttons
@@ -173,7 +173,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #01161E;
+  color: black;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -205,9 +205,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #F57A00;
-  border-color: #F57A00; }
+  color: black;
+  background-color: #ffd166;
+  border-color: #ffd166; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,9 +218,21 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #ef851b;
-  border-color: #ef851b; }
+  color: white;
+  background-color: #f41101;
+  border-color: #f41101;
+  transition: 0.25s; }
+
+  .button.lg,
+  button.lg,
+  input[type="submit"].lg,
+  input[type="reset"].lg,
+  input[type="button"].lg
+  {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
 
 
 /* Forms
@@ -266,7 +278,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #F57A00;
+  border: 1px solid #ffd166;
   outline: 0; }
 label,
 legend {
