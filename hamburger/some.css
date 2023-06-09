@@ -1,10 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  body
+  {
+    font-family: 'Space Mono', monospace;
     font-size: large;
   }
+
+  h1,h2,h3,h4,h5,
+  .title
+  {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+  }
+
+  section
+  {
+    margin-bottom:3em;
+    padding-top:3em;
+    padding-bottom: 3em;
+  }
+
+  footer
+  {
+    padding-top:3em;
+    padding-bottom:1.5em;
+    font-size: small;
+  }
+
+ .lead
+ {
+  color:rgb(121, 121, 121);
+ }
+
+ .center
+ {
+  text-align:center;
+ }
+
+ .push-btm-sm
+ {
+  margin-bottom:1.5em;
+ }
+
+ .push-btm-md
+ {
+  margin-bottom:2.5em;
+ }
+
+ .box-alt
+ {
+  border-top:2px solid #f41101;
+  border-bottom: 2px solid #f41101;
+ }
+
+ .narrow
+ {
+  margin-right:25%;
+  margin-left:25%;
+ }
+
+.cta a
+ {
+  font-weight: bold;
+  text-transform: capitalize;
+ }
+
+ .cta a:hover,
+ .cta a:focus
+ {
+  border-bottom:3px solid #f41101;
+  color:#f41101;
+  transition: 0.25s;
+ }
+
+ .menu .cta a:hover,
+ .menu .cta a:focus
+ {
+  border-top:none;
+ }
   
   .nav-bar li {
     list-style: none;
@@ -19,8 +94,47 @@
   .nav-menu-top
   {
     border-top:1px solid black;
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid black;
+    margin-bottom:4em;
   }
+
+  .bg-prime
+  {
+    background-color: black;
+    color:white;
+  }
+
+  .bg-prime a
+  {
+    color:white;
+  }
+
+  .bg-prime a:hover
+  {
+    color:white;
+  }
+
+  /* IMAGES */
+
+  .icon-48
+  {
+    width:48px;
+    height:48px;
+    display:inline;
+  }
+
+  /* COMPONENTS */
+  .brick
+  {
+    padding:1em;
+    border-bottom:1px solid #050505;
+  }
+
+  .hero
+  {
+    padding:5em 1em;
+  }
+
 
   /* NAVBAR STYLING STARTS */
 .nav-bar {
@@ -67,8 +181,8 @@ input[type=checkbox] {
    .menu {
       display:none;
       position: absolute;
-      background-color:#fcfcfc;
-      border:1px solid #f0f0f0;
+      background-color:#ffd166;
+      border:3px solid #f0f0f0;
       right: 0;
       left: 0;
       text-align: center;
@@ -100,4 +214,19 @@ input[type=checkbox] {
       top: 30px;
       transform: translateX(35%);
     }
+
+    .hero
+    {
+      padding:0;
+    }
+
+    .narrow
+    {
+      margin-right:0;
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: 769px)
+  {
   }
