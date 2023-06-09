@@ -1,0 +1,14 @@
+{{#if isSecondary}}
+    {{#foreach navigation}}
+        <a href="{{url}}">
+            <svg class="icon" role="img" aria-label="{{slug}} icon">
+                <title>{{slug}}</title>
+                <use xlink:href="#{{slug}}"></use>
+            </svg>
+        </a>
+    {{/foreach}}
+{{else}}
+    {{#foreach navigation}}
+        <li><a href="{{url absolute="true"}}" class="nav-item">{{label}}</a></li>
+    {{/foreach}} 
+{{/if}}
